@@ -1,0 +1,15 @@
+//
+// Prefix header for all source files of the 'CocoPCRE' target in the 'CocoPCRE' project.
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#ifdef DEBUG
+#define CLOG1(X)	NSLog(X)
+#define CLOG2(X,Y)	NSLog(X,Y)
+#else
+#define CLOG1(X)	;
+#define CLOG2(X,Y)	;
+#endif
